@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="main">
+        <div class="live-info">
+           <div class="live-info-detail">
+            <h2 class="Day">Saturday</h2>
+            <p class="date">0000-00-00</p>
+           </div>
+           <img src="" class="live-info-icon" alt="">
+           <!-- <i class="fa-solid fa-cloud-moon live-info-icon"></i> -->
+           <div class="live-info-weather">
+            <h1>-&#176C</h1>
+            <p>......</p>
+           </div>
+        </div>
+
+        <div class="old-info">
+            <div class="old-info-detail">
+                <div class="detail">
+                    <p><i class="fa-solid fa-droplet"></i>HUMIDITY</p>
+                    <P class="humidity">--%</P>
+                </div>
+                <div class="detail">
+                    <P><i class="fa-solid fa-wind"></i>WIND</P>
+                    <p class="wind">--mph</p>
+                </div>
+            </div>
+            <div class="old-day-weather">
+                <div class="condition-info-container">
+                    <div class="condition-container">
+                        <p class="condition ">Condition :</p>
+                        <p class="text-value weather-condition">--</p>
+                    </div>
+                    <div class="condition-container">
+                        <p class="condition">Cloud :</p>
+                        <p class="text-value cloud-condition">--</p>
+                    </div>
+            <div class="location condition-container"> <i class="fa-solid fa-location-dot"></i><p class="location-text">--</p></div>
+
+                </div>
+                <div class="day">
+                    <i class="fa-solid fa-moon day-icon"></i>
+                    <p class="day-text">--</p>
+                </div>
+            </div>
+            <!-- <div class="search"> -->
+                    <form class="search">
+                        <input type="text" class="search-inp" placeholder="Enter Location">
+                    <i class="fa-solid fa-magnifying-glass search-icon" type="button"></i>
+                    </form>
+            <!-- </div> -->
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
